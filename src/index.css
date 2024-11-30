@@ -1,0 +1,53 @@
+:root {
+	--min_screen_width: 440px;
+	--font: JetBrains Mono;
+}
+
+html[systemTheme='light'] {
+	--border-bg-color: #F0F0F0;
+	--center-bg-color: #ffffff;
+	--main-color: #7cfc00;
+}
+
+html[systemTheme='dark'] {
+	--border-bg-color: #181818;
+	--center-bg-color: #222222;
+	--main-color: #32cd32;
+}
+
+* {
+	box-sizing: border-box;
+
+	position: relative;
+
+	margin: 0;
+	padding: 0;
+	border: 0;
+
+	font-size: 100%;
+
+	user-select: none;
+}
+
+body main {
+	margin: 0 auto;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 325px;
+
+	background: linear-gradient(90deg, var(--border-bg-color) 0%, var(--center-bg-color) 40%, var(--center-bg-color) 50%, var(--center-bg-color) 60%, var(--border-bg-color) 100%);
+
+	min-width: 320px;
+	min-height: 100vh;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
